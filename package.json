@@ -8,14 +8,16 @@
     "dev": "parcel index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "build": "npm install && parcel build index.html"
+    "build": "npm install && parcel build index.html",
+    "predeploy": "parcel build index.html",
+    "deploy": "gh-pages -d build",
+    "publish": "npm install && parcel build index.html && node deploy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "gh-pages": "^3.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-ga": "^3.1.2"
@@ -33,7 +35,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.0",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.0.2",
-    "prettier": "^1.16.1"
+    "prettier": "^1.16.1",
+    "gh-pages": "^3.1.0"
   },
   "browserLists": [
     "last 2 Chrome versions"
