@@ -1,4 +1,5 @@
 {
+  "homepage": "https://malavshah9.github.io/MalavShah-Website/",
   "name": "MalavShah-Website",
   "version": "1.0.0",
   "description": "",
@@ -8,7 +9,7 @@
     "dev": "parcel index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "build": "npm install && parcel build index.html",
+    "build": "parcel build index.html",
     "predeploy": "parcel build index.html",
     "deploy": "gh-pages -d build",
     "publish": "npm install && parcel build index.html && node deploy.js"
