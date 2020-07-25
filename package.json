@@ -10,8 +10,8 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "build": "parcel build index.html",
-    "predeploy": "parcel build index.html",
-    "deploy": "gh-pages -d build",
+    "predeploy": "parcel build index.html --public-url ./",
+    "deploy": "gh-pages -d dist",
     "publish": "npm install && parcel build index.html && node deploy.js"
   },
   "keywords": [],
