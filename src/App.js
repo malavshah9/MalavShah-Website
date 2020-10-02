@@ -6,6 +6,7 @@ import "../style.css";
 import ReactGA from "react-ga";
 const App = () => {
   useEffect(() => {
+    ReactGA.pageview("/home");
     ReactGA.event({
       category: "Site Loads",
       action: "Site Loaded"
